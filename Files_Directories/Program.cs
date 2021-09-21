@@ -12,11 +12,11 @@ namespace Files_Directories
         {
 
 
-            string path = @"G:\QALearning";
+            string path = $"{Directory.GetCurrentDirectory()}\\QALearning";
             Directory.CreateDirectory(path);
             
 
-            string filepath = @"G:\QALearning\UserData.txt";
+            string filepath = $"{path}\\UserData.txt";
             File.Create(filepath).Close();
 
 
